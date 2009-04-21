@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+require 'rubytter'
 module AnimeTwitterBot
   class Bot
     
@@ -6,10 +7,14 @@ module AnimeTwitterBot
     end
 
     def self.run
+      
+      client = Rubytter.new('animebot','xxxxxx')
+      
       loop {
-        p "hello"
-        sleep 10
+        client.update "hello"
+        sleep 60
       }
+      
     end
     
   end
