@@ -1,2 +1,8 @@
 #!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
 
+require File.dirname(__FILE__) + '/../lib/anime-twitter-bot'
+require 'rubygems'
+require 'anime-twitter-bot'
+
+AnimeTwitterBot::Bot.run
